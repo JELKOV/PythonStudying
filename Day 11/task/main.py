@@ -1,4 +1,5 @@
 import random
+from art import logo
 
 # 카드 덱: 11은 Ace를 의미하고, 10은 Jack, Queen, King을 포함합니다.
 card_deck = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
@@ -47,6 +48,7 @@ def compare(u_score, d_score):
 
 # 게임 시작
 while input("게임을 시작하시겠습니까? 'y' 또는 'n': ") == 'y':
+    print(logo)
     # 초기 카드 두 장씩 뽑기
     user_deck = [deal_card(), deal_card()]  # 사용자 카드 덱
     dealer_deck = [deal_card(), deal_card()]  # 딜러 카드 덱
