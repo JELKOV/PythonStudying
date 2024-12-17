@@ -26,21 +26,21 @@ def calculate_score(deck):
 
     return sum(deck)  # 최종 점수 반환
 
-def compare(user_score, dealer_score):
+def compare(u_score, d_score):
     """
     사용자와 딜러의 점수를 비교해 결과를 반환합니다.
     """
-    if user_score == dealer_score:
+    if u_score == d_score:
         return "무승부입니다."  # 점수가 같으면 무승부
-    elif dealer_score == 0:
+    elif d_score == 0:
         return "딜러가 블랙잭입니다. 패배!"  # 딜러가 블랙잭일 경우
-    elif user_score == 0:
+    elif u_score == 0:
         return "블랙잭입니다! 승리!"  # 사용자가 블랙잭일 경우
-    elif user_score > 21:
+    elif u_score > 21:
         return "21을 초과했습니다. 패배!"  # 사용자의 점수가 21 초과
-    elif dealer_score > 21:
+    elif d_score > 21:
         return "딜러가 21을 초과했습니다. 승리!"  # 딜러의 점수가 21 초과
-    elif user_score > dealer_score:
+    elif u_score > d_score:
         return "승리했습니다!"  # 사용자의 점수가 더 높을 경우
     else:
         return "패배했습니다."  # 그 외의 경우 패배
