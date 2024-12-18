@@ -1,25 +1,25 @@
+# 문자열 길이 반환
 len("Hello")
 
-#Subscripting
-print("Hello"[0])
-#항상 0부터 시작
-print("Hello"[4])
-#음수 지정이 가능하다
-print("Hello"[-1])
+# Subscripting (문자열 인덱싱)
+print("Hello"[0])  # 문자열에서 첫 번째 문자를 출력 ("H")
+# 항상 인덱스는 0부터 시작
+print("Hello"[4])  # 문자열에서 다섯 번째 문자를 출력 ("o")
+# 음수를 지정하면 끝에서부터 거꾸로 인덱싱
+print("Hello"[-1])  # 문자열에서 마지막 문자를 출력 ("o")
 
-# String
-print("123" + "345")
+# String (문자열 결합)
+print("123" + "345")  # 문자열끼리 더하면 연결됨 ("123345")
 
-# Integer = Whole Number
-print(123 + 345)
+# Integer (정수형)
+print(123 + 345)  # 정수끼리 더하면 수학적 연산 수행 (468)
 
-print(123_456_789)
+# 큰 숫자에 언더스코어(_) 사용 -> 가독성을 높임
+print(123_456_789)  # 출력 결과는 123456789
 
+# Float (실수형)
+print(3.14159)  # 실수 출력
 
-# Float = Floating Point Number
-
-print(3.14159)
-
-# Boolean
-print(True)
-print(False)
+# Boolean (불리언)
+print(True)  # 참 출력
+print(False)  # 거짓 출력
