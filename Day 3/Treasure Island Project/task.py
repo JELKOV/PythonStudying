@@ -20,24 +20,26 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
+# Treasure Island 어드벤처 게임
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-choice1 = input('너는\' 왼쪽으로 갈거니 오른쪽으로 갈거니 ? Type "left" or "right".').lower()
 
-#lower
+# 첫 번째 선택지
+choice1 = input('너는 왼쪽으로 갈거니 오른쪽으로 갈거니? Type "left" or "right": ').lower()
 
+# "left"를 선택한 경우
 if choice1 == "left":
-    choice2 = input('You\'ve come to a lake. '
-                    'There is an island in the middle of the lake. '
-                    'Type "wait" to wait for a boat. '
-                    'Type "swim" to swim across.\n').lower()
+    choice2 = input('You\'ve come to a lake. There is an island in the middle of the lake. '
+                    'Type "wait" to wait for a boat. Type "swim" to swim across: ').lower()
+
+    # "wait"를 선택한 경우
     if choice2 == "wait":
-        choice3 = input("You arrive at the island unharmed. "
-                        "There is house with 3 doors. One red, "
-                        "one yellow and one blue. "
-                        "Which colour do you choose?\n").lower()
+        choice3 = input("You arrive at the island unharmed. There is a house with 3 doors. "
+                        "One red, one yellow and one blue. Which colour do you choose? ").lower()
+
+        # 선택한 문에 따라 결과 출력
         if choice3 == "red":
-            print("It's a room full of fire. Game Over")
+            print("It's a room full of fire. Game Over.")
         elif choice3 == "yellow":
             print("You found the treasure. You Win!")
         elif choice3 == "blue":
@@ -45,7 +47,6 @@ if choice1 == "left":
         else:
             print("You chose a door that doesn't exist. Game Over.")
     else:
-        print("You got attacked by an angry trout. Game Over.")
-
+        print("You got attacked by an angry trout. Game Over.")  # "swim" 선택 시 실패
 else:
-    print("You fell in to a hole. Game Over.")
+    print("You fell into a hole. Game Over.")  # "right" 선택 시 실패
