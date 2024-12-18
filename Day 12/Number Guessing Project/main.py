@@ -2,7 +2,7 @@
 import random
 from art import logo
 
-print("\n===== 업다운 게임 =====")
+print("\n=====- 업다운 게임 +=====")
 
 def start_game():
     """
